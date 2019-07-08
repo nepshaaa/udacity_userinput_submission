@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Football Shots Counter</string>
+    <string name="button_goal">GOAL!</string>
+    <string name="button_miss">Miss :(</string>
+    <string name="button_reset">Reset</string>
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+    <string name="goals">Goals:</string>
+    <string name="missed_shots">Missed shots:</string>
+    <string name="total">Total Shots:</string>
+</resources>
