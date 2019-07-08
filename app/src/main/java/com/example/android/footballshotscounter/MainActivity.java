@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds score points for team B.
+     * Adds miss points for team B.
      */
     public void addMissForTeamA(int missPoint) {
         missTeamA += missPoint;
@@ -62,13 +62,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Adds score points for team B.
+     * Adds miss points for team B.
      */
     public void addMissForTeamB(int missPoint) {
         missTeamB += missPoint;
         display(missTeamB, R.id.team_b_miss);
     }
 
+    /**
+     * Reset all values to 0.
+     */
     public void reset(View view) {
         scoreTeamA = 0;
         scoreTeamB = 0;
@@ -84,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
         display(0, R.id.team_b_total);
     }
 
+    /**
+     * Sets scores depending on the button pressed.
+     */
     public void scorePoints(View view) {
         int viewId = view.getId();
         switch (viewId) {
@@ -106,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
         calculateTotals();
     }
 
+    /**
+     * Calculates total scores.
+     */
     public void calculateTotals() {
         totalTeamA = scoreTeamA + missTeamA;
         totalTeamB = scoreTeamB + missTeamB;
